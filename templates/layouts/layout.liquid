@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Title block allowing child pages to override -->
+  <title>{% block title %}Kristina Fitzpatrick{% endblock %}</title>
+
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:500,600' rel='stylesheet' type='text/css'>
+
+  <!-- Device Specific Metadata -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <!-- Vendor Styles -->
+  
+
+  <!-- Global Styles -->
+  {{ "main.css" | asset_url | stylesheet_tag }}
+
+  <!-- Style block allowing child pages to inject their own styles -->
+  {% block styles %}{% endblock %}
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <!-- Header -->
+    {% include "nav" %}
+
+    <!-- Content block, child page inject content -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    {% include "footer" %}
+  </div>
+
+  <!-- Vendor Scripts -->
+  {{ "jquery.min.js" | asset_url | script_tag }}
+  {{ "bootstrap.js" | asset_url | script_tag }}
+  {{ "jquery.mixitup.js" | asset_url | script_tag }}
+  {{ "main.js" | asset_url | script_tag }}
+
+  <!--Google Map-->
+
+  {{ "map.js" | asset_url | script_tag }}
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1QiHDH_aV5TJjz1_Rqjk-W320SF6UejQ&callback=initMap">
+  </script>
+
+  <!-- Script block allowing child pages to inject their own scripts -->
+  {% block scripts %}{% endblock %}
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+// Google Map Styles
+
+#map {
+
+	h4 {
+		font-weight: 300;
+	}
+
+	ul li {
+		list-style-type: none;
+	}
+
+	#google-map {
+		height: 400px;
+		width: 100%;
+	}
+
+	p{
+		font-size: (16);
+		&.h2.txt-white {
+				margin: 0 auto;
+			}
+	}
+}
+
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+

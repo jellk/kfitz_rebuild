@@ -1,0 +1,36 @@
+<!-- LOGO -->
+<div class="container-fluid white main-nav">
+  <div class="row">
+    <div class="logo">
+      <a href="/index"><img src="{{ "main_logo_dark.png" | asset_url }}" alt=""></a>
+    </div>
+  </div>
+  
+  
+  <!-- BEGIN NAVIGATION -->
+  <div class="button_container" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="row">
+      <div class="logo">
+        <img src="{{ "main_logo_light.png" | asset_url }}" class="img-responsive" alt="">
+      </div>
+    </div>
+    
+    <nav class="overlay-menu">
+      <ul>
+        <li ><a href="/index">Home</a></li>
+        <li><a href="/about/index">About</a></li>
+        <li><a href="/media/index">Media</a></li>
+        <li><a href="/blog/index">Blog</a></li>
+        <li><a href="/contact/index">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- END NAVIGATION -->
+</div>

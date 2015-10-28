@@ -1,0 +1,49 @@
+footer {
+
+	nav {	
+
+		li a {
+
+			&:hover {
+				color: $light-teal;
+				text-decoration: none;
+			}
+		}
+	}
+
+	ul li a, p {
+		color: $white;
+	}
+
+	span {
+		color: $light-gray;
+	}
+
+	.social-icons {
+		
+		li a{
+			color: $light-gray;
+			font-size: 25px;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	
+	.container-fluid.light-gray {
+		padding: 1em;
+	}
+
+	.back-to-top {
+		a {
+			background: $dark-gray;
+			padding: 15px 25px;
+			color: $light-gray;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}

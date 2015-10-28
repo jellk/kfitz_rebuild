@@ -1,0 +1,53 @@
+{% block content %} 
+	<div class="container-fluid light-teal">
+		<h3 class="text-center section-title">Media</h3>
+		<hr class="small-teal" align="center">
+	</div>
+	<div class="container-fluid off-white media">
+		
+		<img src="http://placehold.it/800x400" class="img-responsive" alt="">
+	</div>
+
+	<!--Begin Gallery-->
+	<div class="container-fluid white">
+		<div class="text-center">
+			<button class="btn btn-default btn-pink filter" data-filter="all">All</button>
+			<button class="btn btn-default btn-pink filter" data-filter=".photo">Photos</button>
+			<button class="btn btn-default btn-pink filter" data-filter=".video">Videos</button>
+		</div>
+		
+
+
+	<div id="gallery-wrapper" class="container">
+	  <div class="mix video">
+	    <img src="{{ "media_vid_1.png" | asset_url }}" class="img-responsive" alt="">
+	  </div>
+	  <div class="mix photo">
+	    <img src="{{ "media_img_1.png" | asset_url }}" class="img-responsive" alt="">
+	  </div>
+	  <div class="mix video">
+	    <img src="{{ "media_vid_2.png" | asset_url }}" class="img-responsive" alt="">
+	   </div>
+	  <div class="mix photo">
+	   <img src="{{ "media_img_2.png" | asset_url }}" class="img-responsive" alt="">
+	  </div>
+	  <div class="mix photo">
+	    <img src="{{ "media_img_3.png" | asset_url }}" class="img-responsive" alt="">
+	  </div>
+	  <div class="mix photo">
+	    <img src="{{ "media_img_4.png" | asset_url }}" class="img-responsive" alt="">
+	  </div>
+	  <div class="gap"></div>
+	</div>
+	<!--
+		<img src="{{ "media_img_4.png" | asset_url }}" class="img-responsive" alt="">
+
+		<ul class="pagination">
+	    <li><a href="#">&laquo;</a></li>
+	    <li><a href="#">1</a></li>
+	    <li><a href="#">2</a></li>
+	    <li><a href="#">&raquo;</a></li>
+		</ul>-->
+	</div>
+	<!--End Gallery-->
+{% endblock %}

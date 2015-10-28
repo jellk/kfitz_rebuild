@@ -1,0 +1,63 @@
+{% block content %}
+<!--BEGIN INDEX CONTENT --> 
+	<div class="container-fluid white feature-container">
+		<div class="feature">
+			<img src="{{ "index_header.png" | asset_url }}" class="img-responsive" alt="">
+			<div class="feature-text text-left">
+				<h3>
+					Kristina Fitzpatrick is an <br> experienced host and reporter with <br> a diverse broadcasting background.
+				</h3>
+				<hr class="small-teal" align="left">
+				<p>
+					Prior to rejoining FS South in her hometown of Atlanta, Kristina was a <br> host for MLB Network in Secaucus, NJ where she worked with some of <br> the most respected analysts in baseball on programming such as <br> “MLB Now and “High Heat with Christopher Russo”...
+				</p>
+
+				<a href="#" class="btn btn-default btn-pink" type="submit">View Full Bio</a>
+			</div>
+		</div>
+	</div>
+	{% include "sponsor" %}
+	<div class="container-fluid light-teal">
+		
+		<!--Begin Featured Media-->
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>
+					Featured Media
+				</h3>
+				<hr class="small-teal" align="left">
+				<p>
+					Kristina Fitzpatrick (née Akra) covers the Atlanta Braves on FoxSports South with in-game reports from the field and as a host for Braves Live. She also serves as a Sports Anchor for HLN and CNN on shows such as Weekend Express with Lynn Smith and New Day.
+				</p>
+
+				<a href="#" class="btn btn-default btn-pink" type="submit">View All Media</a>
+			</div>
+			<div class="col-sm-6">
+				<img src="http://placehold.it/800x400" class="img-responsive" alt="">
+			</div>
+		</div>
+		<!-- End Featured Media-->
+	</div>
+	<div class="container-fluid white">
+		
+		<!--Recent Posts-->
+		<div class="row">
+			<div class="col-sm-8">
+				<h3>Recent Posts</h3>
+				<hr class="small-teal" align="left">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, delectus, error excepturi nesciunt illo sed suscipit placeat dolore distinctio sit rem magnam. Nam, consequatur sint rerum! Sint, beatae doloribus iste?
+				</p>
+
+				<a href="#" class="btn btn-default btn-pink" type="submit">Read More</a>
+			</div>
+			<div class="col-sm-4">
+				<h3>Latest Tweets</h3>
+				<hr class="small-teal" align="left">
+				<!-- Insert Sidebar Here -->
+			</div>
+		</div>
+		<!-- End Featured Media-->
+	</div>
+	<!--END INDEX CONTENT-->
+{% endblock %}

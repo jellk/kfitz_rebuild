@@ -1,0 +1,21 @@
+{% block content %} 
+	<div class="container-fluid light-teal">
+		<h3 class="text-center section-title">Contact Us</h3>
+		<hr class="small-teal" align="center">
+	</div>
+	{% include "map" %}
+	<div class="container-fluid off-white">
+		<div class="row">
+			<div class="col-sm-8">
+				<h3>Get in touch</h3>
+				<hr class="small-teal" align="left">
+				{% include "contact-form" %}
+			</div>
+			<div class="col-sm-4">
+				<h3>Latest Tweet</h3>
+				<hr class="small-teal" align="left">
+				<!--Twitter Sidebar -->
+			</div>
+		</div>
+	</div>
+{% endblock %}

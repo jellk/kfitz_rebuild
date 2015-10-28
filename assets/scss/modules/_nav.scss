@@ -1,0 +1,222 @@
+.main-nav {
+  $color-background: $white;
+  $color-main: $light-teal;
+  $color-active: $white;
+  $color-link: #FFF;
+
+  $button-height: 24px;
+  $button-width: 30px;
+
+  li {
+    font-size: 16px;
+  }
+
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    margin:  0 auto;
+    
+    a {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      color: $color-main;
+      text-decoration: none;
+      font-size: 20px;
+      overflow: hidden;
+      top: 5px;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        background: $color-main;
+        height: 2px;
+        width: 0%;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0;
+        transition: .35s ease;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        width: 100%;
+      }
+    }
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+  }
+
+  .button_container {
+    position: fixed;
+    top: 7%;
+    right: 5%;
+    height: $button-height;
+    width: $button-width;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+    
+    &:hover {
+      opacity: .7;
+    }
+    
+    &.active {
+      .top {
+        transform: translateY(10px) translateX(0) rotate(37deg);
+        background: $color-active;
+      }
+      .middle {
+        opacity: 0;
+        background: $color-active;
+      }
+      
+      .bottom {
+        transform: translateY(-8px) translateX(0) rotate(-37deg);
+        background: $color-active;
+      }
+    }
+    
+    span {
+    background: $black;
+    border: none;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  all .35s ease;
+    cursor: pointer;
+      
+      &:nth-of-type(2) {
+        top: 9px;
+      }
+      
+      &:nth-of-type(3) {
+        top: 18px;
+      }
+    }
+  }
+
+  .logo {
+    padding: 0 50px;
+  }
+
+  .overlay {
+    position: fixed;
+    background: $color-main;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    
+    &.open {
+      opacity: .9;
+      z-index: 20;
+      visibility: visible;
+      height: 100%;
+      
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+        
+        &:nth-of-type(2) {
+          animation-delay: .40s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .45s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .50s;
+        }
+        &:nth-of-type(5) {
+          animation-delay: .55s;
+        }
+      }
+    }
+
+    .logo {
+      position: relative;
+      margin: 0 auto;
+      padding: 25px 75px;
+    }
+
+    nav {
+      position: relative;
+      height: 70%;
+      top: 40%;
+      transform: translateY(-40%);
+      font-size: 20px;
+      font-family: 'Vollkorn', serif;
+      font-weight: 400;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%; 
+      
+      li {
+        display: block;
+        position: relative;
+        opacity: 0;
+        cursor: pointer;
+
+        
+        a {
+          display: block;
+          position: relative;
+          color: $color-link;
+          padding: 10px 100px;
+          text-decoration: none;
+          overflow: hidden;
+
+          &:hover:after,
+           &:focus:after,
+           &:active:after {
+             width: 100%;
+           }
+          
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 0%;
+            transform: translateX(-40%);
+            height: 100%;
+            z-index: -1;
+            background: $black;
+            transition: .35s;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+}

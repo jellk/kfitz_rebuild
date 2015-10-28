@@ -1,0 +1,47 @@
+.media {
+  img {
+    margin: 0 auto;
+  }
+}
+
+.btn-pink.active, .btn-pink.active:focus {
+  outline: none;
+  background: $white;
+  color: $pink;
+  border-color: $pink;
+}
+
+.container{
+  text-align: justify;
+  font-size: 0;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .item,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  margin-bottom: 2%;
+  vertical-align: top;
+  display: none;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 49%;
+  }
+}

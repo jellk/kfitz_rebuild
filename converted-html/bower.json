@@ -1,0 +1,19 @@
+{
+  "name": "Kristina Fitzpatrick",
+  "version": "0.0.0",
+  "description": "Kristinafitzpatrick.com | Rebuild",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "shufflejs": "~3.1.1"
+  }
+}

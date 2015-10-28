@@ -1,0 +1,88 @@
+// ==========================================================================
+// Helper Classes
+// ==========================================================================
+
+.text-hide{
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile-hide{ 
+  @media (max-width: 768px) { 
+    display: none;
+  }
+}
+
+.desktop-hide{ 
+  @media (min-width: 768px) { 
+    display: none;
+  }
+}
+
+.no-padding{
+  padding:0 !important;
+}
+
+.no-margin{
+  margin:0 !important;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+// Container Colors
+.white {
+	background-color: $white;
+
+	&.container-fluid {
+		padding: em(25);
+	}
+}
+
+.pink {
+  background-color: $pink;
+  &.container-fluid {
+     padding: em(25);
+   }
+}
+
+.light-teal {
+  background-color: $light-teal;
+  &.container-fluid {
+     padding: em(25);
+   }
+}
+
+.dark-teal {
+  background-color: $dark-teal;
+  &.container-fluid {
+     padding: em(25);
+   }
+}
+
+.light-gray {
+  background-color: $light-gray;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.dark-gray {
+  background-color: $dark-gray;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.off-white {
+  background-color: $off-white;
+  &.container-fluid {
+     padding: em(25);
+   }
+}
